@@ -6,8 +6,13 @@ const API_URL = `${BACKEND_URL}/api/products/`
 
 //Create a new product
 const createProduct = async (formData) => {
-    const response = await axios.post(API_URL, formData);
-    return response.data;
+    try {
+        const response = await axios.post(API_URL, formData);
+        return response.data;
+    } catch (error) {
+        console.error("Error creating product:", error);
+        throw error;
+    }
 };
 
 //Get all products
