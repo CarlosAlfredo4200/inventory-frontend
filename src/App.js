@@ -38,12 +38,12 @@ function App() {
     <ToastContainer />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<Register />} />
-        <Route path="/forgot" element={<Forgot />} />
-        <Route path="/resetpassword/:resetToken" element={<Reset />} />
+        <Route path="login" element={<Login />} />
+        <Route path="register" element={<Register />} />
+        <Route path="forgot" element={<Forgot />} />
+        <Route path="resetpassword/:resetToken" element={<Reset />} />
 
-        <Route path="/dashboard" element={
+        <Route path="dashboard" element={
           <Sidebar>
             <Layout>
               <Dashboard />
@@ -51,7 +51,7 @@ function App() {
           </Sidebar>
         } />
 
-        <Route path="/add-product" element={
+        <Route path="add-product" element={
           <Sidebar>
             <Layout>
               <AddProduct />
@@ -59,7 +59,7 @@ function App() {
           </Sidebar>
         } />
 
-<       Route path="/product-detail/:id" element={
+<       Route path="product-detail/:id" element={
           <Sidebar>
             <Layout>
               <ProductDetail />
@@ -68,7 +68,7 @@ function App() {
         } />
 
         <Route
-          path="/edit-product/:id"
+          path="edit-product/:id"
           element={
             <Sidebar>
               <Layout>
@@ -79,7 +79,7 @@ function App() {
         />
 
         <Route
-          path="/profile"
+          path="profile"
           element={
             <Sidebar>
               <Layout>
@@ -90,7 +90,7 @@ function App() {
         />
 
         <Route
-          path="/edit-profile"
+          path="edit-profile"
           element={
             <Sidebar>
               <Layout>
@@ -101,7 +101,7 @@ function App() {
         />
 
         <Route
-          path="/contact-us"
+          path="contact-us"
           element={
             <Sidebar>
               <Layout>
